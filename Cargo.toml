@@ -1,0 +1,15 @@
+[workspace]
+members = ["a","b"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "MIT"
+
+[workspace.dependencies]
+a = { path = "a" }
+b = { path = "b" }
+
+prost = "0.12.0"
+prost-build = "0.12.0"
+protoc-bin-vendored = "3.0.0"
